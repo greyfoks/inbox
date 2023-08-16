@@ -1,15 +1,15 @@
-pragma solidity ^0.4.17;
+pragma solidity ^0.8.21;
 // linter warnings (red underline) about pragma version can igonored!
 
 // contract code will go here
 contract Inbox {
     string public message;
 
-    function Inbox(string initialMessage) public {
+    constructor(string memory initialMessage)  {
         message = initialMessage;
     }
 
-    function setMessage(string newMessage) public {
+    function setMessage(string memory newMessage) public {
         message = newMessage;
     }
 
